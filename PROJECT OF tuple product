@@ -1,0 +1,12 @@
+print("PROJECT OF TUPLES MULTIPLICATION")
+
+print("enter the numbers you want to doule. (hint: 1, 2, 3, 4, 5, 6) write in this format) \n answer below: ")
+tuples= eval(input())
+double = 2
+
+product = ()
+
+for i in tuples:
+    product += (i*double,)
+
+print("your doubled number is: ", product)
