@@ -1,0 +1,50 @@
+'''student_data = {'id1':
+    {'name': ['zara'], 
+     'class':['v'],
+    'subject':['maths, science, history']
+    },
+    'id2':
+    {'name': ['david'],
+     'class':['VI'],
+     'subject': ['english, bangla, maths']
+     },
+     'id3':
+    {'name': ['zara'], 
+     'class':['v'],
+    'subject':['maths, science, history']
+    },
+    'id4':
+    {'name': ['phool'], 
+     'class':['vii'],
+    'subject':['maths, chemistry, history, ophysics']
+    },
+                                                  }
+result = {}
+for key, value in student_data.items():
+    if value not in result.values():
+        result[key] = value
+print(result)'''
+'''
+print("printing number if studnets with 100% score ")
+
+dicto ={'zara': 100, 'tuli':100, 'labeeb':100, 'meem': 100, 'abrar': 98}
+print("the original dictionary is : " + str(dicto))
+
+d = 100
+
+freq = 0
+
+for key in dicto:
+    if dicto[key] == d:
+        freq +=1
+
+print("the number of students getting 100 is " + str(freq))'''
+
+country_code = {'india': '0091', 'australia': '0025', 'nepal': '00977' }
+
+print("country code for india - ")
+print(country_code.get ( 'india', 'Not Found'))
+
+print("country code for japan - ")
+print(country_code.get ( 'japan', 'Not Found'))
+
