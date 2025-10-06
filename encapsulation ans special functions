@@ -1,0 +1,45 @@
+'''class myClass:
+     __privateVar = 27;
+     def __privmethod(self):
+          print("i am inside myClass")
+
+     def hello(self):
+          print("private variable value", myClass.__privateVar)
+
+#obj creation & method call
+
+foo = myClass()
+foo.hello()
+foo.__privmethod'''
+    
+'''
+class computer:
+    def __init__(self):
+        self.__maxprice = 900
+     
+    def sell(self):
+        print("selling price:{}".format(self.__maxprice))
+
+    def setmaxprice(self,price):
+        self.__maxprice = price
+c = computer()
+c.sell()
+
+c.__maxprice = 1000
+c.sell()
+
+c.setmaxprice(5000)
+c.sell()
+
+'''
+
+class point:
+    def __init__(self, x=0, y = 0):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return "({0}, {1})".format(self.x, self.y)
+p1 = point(2,3)
+print(p1)
+
+
