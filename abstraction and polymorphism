@@ -1,0 +1,93 @@
+'''class india():
+    def capital(self):
+        print("the capital of india is New delhi")
+
+    def language(self):
+        print("the mother tounge of india is Hindi")
+    def economy(self):
+        print("the country of india is a developing country")
+    def independence(self):
+        print("the independence day of india is celebrated on 15th august")
+    
+class BD():
+    def capital(self):
+        print("the capital of bangladesh is Dhaka")
+
+    def language(self):
+        print("the mother tounge of bangladesh is bangla")
+
+    def economy(self):
+        print("the country of bangladesh is also a developing country")
+
+    def independence(self):
+        print("the independence day of bagladesh is celebrated on 26th march")
+
+#object creation
+obj_ind = india()
+obj_bd = BD()
+
+#using loop to print
+for country in (obj_ind, obj_bd):
+    country.capital()
+    country.economy()
+    country.independence()
+    country.language()'''
+'''
+from abc import ABC, abstractclassmethod
+
+class animal(ABC):
+     def move():
+          pass
+     
+class human(animal):
+     def move(self):
+          print("i can walk and run")
+
+class snake(animal):
+     def move(self):
+          print("i can crawl")    
+
+class dog(animal):
+     def move(self):
+          print("i can bark")
+
+class lion(animal):
+     def move(self):
+          print("i can roar")
+
+class cat(animal):
+     def move(self):
+          print("i can meow")
+
+R = human()
+R.move()
+
+R = snake()
+R.move()
+
+R = dog()
+R.move()
+
+R = lion()
+R.move()
+
+R = cat()
+R.move()'''
+
+from abc import ABC, abstractclassmethod
+
+class abstractclass(ABC):
+    def print(self,x):
+        print("passes value: ", x)
+
+    @abstractclassmethod
+    def task(self):
+        print("we are inside the absclass task")
+
+class test_class(abstractclass):
+    def task(self):
+        print("we are inside the test_class task")
+
+test_obj = test_class()
+test_obj.task()
+test_obj.print(100)
